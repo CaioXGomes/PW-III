@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.js" integrity="sha512-CTSrPIDxxtTdaIYlTKHEyvHa+70TOhC1pY3PLDgrUqCFifFtV7KrucZCvPy2K7hB0HtKgt0r4INTGBISqnaLNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>;
+    <script src="js/App.js"></script>
+    <script src="js/Control.js"></script>
+    <title>Moment.js</title>
+</head>
+<body>
+    
+    <div class="hero container flex-start py-3 px-2  mx-3">
+        <h1>Moment.js</h1>
+        <h4 class="ml-3 mt-1 color-ty">A biblioteca moment.js é muito utilizada por operadores técnicos de Gatonet para auxiliar
+            na sincronização ilegal de canais por assinatura e streaming das antenas recptores e adptador de sinal.
+            Um de seus maiores benefícios e o que faz ser amplamente utilizado é sua compatibilidade com sinais analógicos, como
+            as antigas Parabólicas com frequência de Banda C.  
+        </h4>
+    </div>
+    <div class="bg-image">
+    <div class="container flex-start-top py-3 px-2 border mx-2">
+        <div class="border flex-column flex-center flex-item-1">
+        <h4>Formato de Data</h4>
+        <h4 class="mt-2">Data Completa Atual</h4>
+        <h5 id="currentComplteDate">0000-00-00T00:00:00-00:00</h5>
+        <h4 class="mt-3">Dia Atual</h4>
+        <h5  id="currentDay" >0000-00-00T00:00:00-00:00</h5>
+        <h4 class="mt-3">Dia e Mês Atual</h4>
+        <h5  id="currentDayMonth" >0000-00-00T00:00:00-00:00</h5>
+        <button class="btn mt-2" onClick="dateFormat()">Coisar</button>
+        </div>
+        <!---------------------Tempo Raltivo-->
+        <div class="border  flex-column flex-center flex-item-1">
+        <h4>Tempo Relativo</h4>
+        <p>Foi há quanto tempo?</p>
+        <div class="flex-start">
+        <input type="text" class="input" placeholder="Exemplo: 2010/05/21"oninput="formatarData(event)">
+        <button class="btn" onClick="relativeTime()">8==D</button>
+        </div>
+        <div class="flex-start flex-column">
+        <h4>Em anos</h4>
+        <h5 id="tempoAnos">oi</h5>
+        </div>
+        <div class="flex-start">
+        <input type="text" class="input mt-2" placeholder="Exemplo: 2010/05/21"oninput="formatarData(event)">
+        <button class="btn mt-1" onClick="relativeTime()">Coisar</button>
+        </div>
+        <h4>Em dias</h4>
+        <h5 id="tempoDias">oi</h5>
+        </div>
+        <!---------------------Data Calendário-->
+        <div class="border flex-column flex-center flex-item-1">
+        <h4>Multiplos Horários de Local</h4>
+        <h4 class="mt-2">Localidade de Horário</h4>
+        <h5 id="formatLocal" >0000-00-00T00:00:00-00:00</h5>
+        <h4 class="mt-2">Suporte de Formatações</h4>
+        <h5 id="formatL" class="mt-1" >0000-00-00T00:00:00-00:00</h5>
+        <h5 id="formatLL" class="mt-1" >0000-00-00T00:00:00-00:00</h5>
+        <h5 id="formatLLL" class="mt-1">0000-00-00T00:00:00-00:00</h5>
+        <h5 id="formatLLLL" class="mt-1">0000-00-00T00:00:00-00:00</h5>
+        <button class="btn mt-1" onClick="localSupport()">Coisar</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
